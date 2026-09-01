@@ -2,7 +2,7 @@ import random
 import time
 
 def lersensor():
-    temp = round(random.uniform(20, 120), 2)
+    temp = round(random.uniform(-20, 150), 2)
     press = round(random.uniform(1, 8), 2)
 
     print("\n")
@@ -12,7 +12,7 @@ def lersensor():
 
     time.sleep(1.2)
 
-    if temp < 0 and temp > 100:
+    if 0 <= temp <= 100:
         print("ERRO! TEMP. IRREGULAR")
     else:
         print("OK")
