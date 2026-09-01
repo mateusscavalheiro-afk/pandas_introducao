@@ -12,17 +12,17 @@ def lersensor():
 
     time.sleep(1.2)
 
-    if temp > 80:
-        print("ALERTA! TEMPERATURA ALTA")
+    if temp < 0 and temp > 100:
+        print("ERRO! TEMP. IRREGULAR")
     else:
-        print("Normar")
+        print("OK")
 
     time.sleep(1.2)
 
     if press > 5:
-        print("ALERTA! PRESSÃO ALTA")
+        print("ERRO! PRESS. IRREGULAR")
     else:
-        print("Tudo normar")
+        print("OK")
 
     print("-" * 120)
 
@@ -30,7 +30,7 @@ def lersensor():
 
 print("-" * 60)
 time.sleep(1.5)
-print("Simulação de telemtria de sensor")
+print("Simulação de telemetria de sensor")
 time.sleep(2)
 
 for i in range(5):  
